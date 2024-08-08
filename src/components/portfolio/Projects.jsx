@@ -41,7 +41,7 @@ const Projects = () => {
                 alt={project.title}
                 className="w-full max-h-96 rounded-3xl group-hover:object-cover"
               />
-              <div className="absolute left-8 bottom-20 flex space-x-2">
+              <div className="hidden absolute  left-8 bottom-20 md:flex space-x-2">
                 {project.techStack.map((tech, idx) => (
                   <div
                     key={idx}
