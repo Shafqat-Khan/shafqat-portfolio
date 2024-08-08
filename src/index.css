@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Inter;
+  src: url("/assets/fonts/Inter-Regular.ttf");
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #1f1f1f;
+}
+
+/* For Experience */
+.custom-margin:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+}

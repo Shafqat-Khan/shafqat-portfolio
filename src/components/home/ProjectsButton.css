@@ -1,0 +1,72 @@
+.wrapper {
+  height: 100%;
+  margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 11rem;
+  height: 11rem;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  color: gray;
+  font-size: 2rem;
+}
+
+.description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 10s linear infinite;
+}
+
+.description span {
+  position: absolute;
+  color: white;
+  height: 10rem;
+  width: 1rem;
+  font-size: 1rem;
+  transform-origin: center;
+  animation: fan 2s ease-out forwards;
+}
+
+@keyframes fan {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(calc(var(--i) * 14deg));
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.circle:hover {
+  @apply border-primary_color;
+}
+.circle:hover .description span {
+  @apply text-primary_color;
+}
+.circle:hover .icon {
+  @apply text-primary_color;
+}
