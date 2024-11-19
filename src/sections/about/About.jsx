@@ -5,7 +5,7 @@ const About = () => {
   const aboutTitle =
     "Every great application begins with an even better line of code";
   const aboutDescription =
-    "Since embarking on my journey as a full stack developer over the past 5 years, I’ve tackled remote projects for agencies, advised burgeoning startups, and teamed up with skilled professionals to build digital solutions for both business and consumer markets. I am quietly confident, inherently curious, and always striving to refine my skills—one coding challenge at a time.";
+    "Since embarking on my journey as a full stack developer, I’ve tackled remote projects for agencies, advised burgeoning startups, and teamed up with skilled professionals to build digital solutions for both business and consumer markets. I am quietly confident, inherently curious, and always striving to refine my skills—one coding challenge at a time.";
 
   return (
     <div id="about">
